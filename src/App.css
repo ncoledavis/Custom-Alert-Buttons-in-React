@@ -1,0 +1,71 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.app h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem;
+  color: #1f2937;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0 0 2.5rem;
+}
+
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toolbar button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.toolbar button:hover {
+  background: #4f46e5;
+}
+
+.toolbar button:active {
+  transform: scale(0.96);
+}
+
+.toolbar button:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app h1 {
+    color: #f3f4f6;
+  }
+
+  .subtitle {
+    color: #9ca3af;
+  }
+
+  .toolbar button {
+    background: #818cf8;
+  }
+
+  .toolbar button:hover {
+    background: #6366f1;
+  }
+}
